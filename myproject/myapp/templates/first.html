@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <span> {{ title }}</span>
+    <table>
+        {% for row in some_list %}
+        <tr>
+            {% for column in row %}
+                <td>{{ column.name }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

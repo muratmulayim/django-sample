@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if error_message %}
+        <span class="custom-error-message">{{ error_message }}</span>
+    {% else %}
+        <span class="default-error-message">You have failed</span>
+    {% endif %}
+{% endblock %}

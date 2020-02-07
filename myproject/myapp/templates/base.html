@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="/static/skin/base.css">
+</head>
+<body>
+    <div class="container">
+        <div id="sidebar">
+            {% block sidebar %}
+            <ul>
+                <li><a href="/myapp/first">First</a></li>
+                <li><a href="/myapp/second/">Second</a></li>
+                <li><a href="/myapp/name/">Name</a></li>
+            </ul>
+            {% endblock %}
+        </div>
+
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+
+    </div>
+</body>
+</html>
